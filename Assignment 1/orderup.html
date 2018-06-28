@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Up</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="orderup.css">
+</head>
+
+<body>
+    <img src="OrderUp-Logo.png" id="logoImage" alt="OrderUp Logo" />
+
+    <form action="results.html" method="get">
+
+        <fieldset class="info">
+
+            <legend>Billing Address</legend>
+
+            First Name
+            <input type="text" name="firstName" required>
+            <br> Last Name
+            <input type="text" name="lastName" required>
+            <br> Street Address
+            <input type="text" name="address" required>
+            <br> City
+            <input type="text" name="city" required>
+            <br> State
+            <select name="state">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset class="info">
+            <legend>Payment</legend>
+
+            <input type="radio" name="cardType" value="Visa" checked> Visa
+            <input type="radio" name="cardType" value="Mastercard"> Mastercard
+            <input type="radio" name="cardType" value="Discover"> Discover
+            <input type="radio" name="cardType" value="American Express"> American Express
+            <br> Card Number
+            <input type="text" name="cardNumber" required>
+            <br> Month
+            <select name="cardMonth">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            Year
+            <select name="cardYear">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select>
+            <br> CVV
+            <input type="text" name="cvv" required>
+            <br>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Create Account</legend>
+
+            Username
+            <input type="text" name="username" required>
+            <br> Password
+            <input type="text" name="password" required>
+            <br> Password (Verify)
+            <input type="text" name="password2" required>
+            <br>
+
+        </fieldset>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>

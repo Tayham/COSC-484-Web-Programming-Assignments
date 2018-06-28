@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Success!</title>
+    <meta charset="UTF-8">
+</head>
+
+<body onload="formData()">
+    
+</body>
+
+<pre>
+<script>
+    function formData(){
+        document.write("<h2> The form has been successfully submitted! </h2>")
+        document.write("<h3> You entered in the following data: </h3>")
+        let formData = new URLSearchParams(location.search.slice(1))
+        var formDataTxt = formData.toString();
+        formDataTxt = formDataTxt.replace(/\+/g, ' ');
+        var values = formDataTxt.split("&");
+        values.forEach(function(value){
+            document.writeln(value + "<br>")
+        });
+    }
+</script>
+</pre>
+
+</html>
